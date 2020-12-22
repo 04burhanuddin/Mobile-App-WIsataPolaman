@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/ToolbarDaftarWisata"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ic_dftr_bck_home"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/dftr_wisata_polman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="Daftar Wisata Polman"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ic_dftr_bck_home"
+                app:layout_constraintTop_toTopOf="@+id/ToolbarDaftarWisata"
+                app:layout_constraintVertical_bias="0.363"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/search_off"
+                tools:ignore="VectorDrawableCompat" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/dftr_alun_alun"
+                android:layout_width="399dp"
+                android:layout_height="235dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/alun_alun"
+                tools:srcCompat="@drawable/alun_alun" />
+
+            <ImageView
+                android:id="@+id/info_alun_alun"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dftr_alun_alun"
+                app:layout_constraintEnd_toEndOf="@+id/dftr_alun_alun"
+                app:layout_constraintTop_toTopOf="@+id/dftr_alun_alun"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_informasi"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/Alun_alun"
+                android:layout_width="181dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="4dp"
+                android:text="Alun-Alun Polewali Mandar"
+                android:textColor="#F6F6F6"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/dftr_alun_alun"
+                app:layout_constraintStart_toStartOf="@+id/dftr_alun_alun" />
+
+            <ImageView
+                android:id="@+id/dftr_pantai_gonda"
+                android:layout_width="399dp"
+                android:layout_height="235dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dftr_alun_alun"
+                app:srcCompat="@drawable/pantai_gonda"
+                tools:srcCompat="@drawable/pantai_gonda" />
+
+            <TextView
+                android:id="@+id/pantai_gonda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="4dp"
+                android:text="Pantai Gonda"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/dftr_pantai_gonda"
+                app:layout_constraintStart_toStartOf="@+id/dftr_pantai_gonda" />
+
+            <ImageView
+                android:id="@+id/info_pantai_gonda"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dftr_pantai_gonda"
+                app:layout_constraintEnd_toEndOf="@+id/dftr_pantai_gonda"
+                app:layout_constraintTop_toTopOf="@+id/dftr_pantai_gonda"
+                app:layout_constraintVertical_bias="0.005"
+                app:srcCompat="@drawable/ic_informasi"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/dftr_pantai_palippis"
+                android:layout_width="399dp"
+                android:layout_height="235dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.585"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dftr_pantai_gonda"
+                app:srcCompat="@drawable/pantai_palippis"
+                tools:srcCompat="@drawable/pantai_palippis" />
+
+            <TextView
+                android:id="@+id/pantai_palippis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="4dp"
+                android:text="Pantai Palippis"
+                android:textColor="#FAFAFA"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/dftr_pantai_palippis"
+                app:layout_constraintStart_toStartOf="@+id/dftr_pantai_palippis" />
+
+            <ImageView
+                android:id="@+id/info_pantai_palippis"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dftr_pantai_palippis"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/dftr_pantai_palippis"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_informasi"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/dftr_negeri_awan"
+                android:layout_width="399dp"
+                android:layout_height="235dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.585"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dftr_pantai_palippis"
+                app:srcCompat="@drawable/negeri_awan"
+                tools:srcCompat="@drawable/negeri_awan" />
+
+            <TextView
+                android:id="@+id/negeri_diatas_awan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="4dp"
+                android:text="Negeri Diatas Awan"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/dftr_negeri_awan"
+                app:layout_constraintStart_toStartOf="@+id/dftr_negeri_awan" />
+
+            <ImageView
+                android:id="@+id/info_negeriatas_awan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dftr_negeri_awan"
+                app:layout_constraintEnd_toEndOf="@+id/dftr_negeri_awan"
+                app:layout_constraintTop_toTopOf="@+id/dftr_negeri_awan"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_informasi"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/dftr_dato"
+                android:layout_width="399dp"
+                android:layout_height="235dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.583"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dftr_negeri_awan"
+                app:srcCompat="@drawable/dato_beach"
+                tools:srcCompat="@drawable/dato_beach" />
+
+            <TextView
+                android:id="@+id/pantai_dato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="4dp"
+                android:text="Pantai Dato"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/dftr_dato"
+                app:layout_constraintStart_toStartOf="@+id/dftr_dato" />
+
+            <ImageView
+                android:id="@+id/info_pantai_dato"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dftr_dato"
+                app:layout_constraintEnd_toEndOf="@+id/dftr_dato"
+                app:layout_constraintTop_toTopOf="@+id/dftr_dato"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_informasi"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/dftr_hutan_bambu"
+                android:layout_width="399dp"
+                android:layout_height="235dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dftr_dato"
+                app:srcCompat="@drawable/hutan_bambu"
+                tools:srcCompat="@drawable/hutan_bambu" />
+
+            <TextView
+                android:id="@+id/hutan_bambu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="4dp"
+                android:text="Hutan Bambu"
+                android:textColor="#FAFAFA"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/dftr_hutan_bambu"
+                app:layout_constraintStart_toStartOf="@+id/dftr_hutan_bambu" />
+
+            <ImageView
+                android:id="@+id/info_hutan_bambu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dftr_hutan_bambu"
+                app:layout_constraintEnd_toEndOf="@+id/dftr_hutan_bambu"
+                app:layout_constraintTop_toTopOf="@+id/dftr_hutan_bambu"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_informasi"
+                tools:ignore="VectorDrawableCompat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

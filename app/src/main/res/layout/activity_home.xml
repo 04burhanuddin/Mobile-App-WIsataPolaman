@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wisata_polman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Wisata Polman"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ToolbarHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/info_apps"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ToolbarHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/info_polman"
+        android:layout_width="384dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Sekilas Tentang Polewali Mandar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ToolbarHome" />
+
+    <ImageView
+        android:id="@+id/logo_polman"
+        android:layout_width="261dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="40dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_polman"
+        app:srcCompat="@drawable/logo_polman" />
+
+    <TextView
+        android:id="@+id/detail_polman"
+        android:layout_width="378dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center|center_vertical"
+        android:lineSpacingExtra="3sp"
+        android:text="Kabupaten Polewali Mandar atau Polman adalah salah satu kota yang memiliki beragam objek wisata yang begitu indah dan masih terjaga kelestariannya sehingga membuat peminat pengunjung semakin banyak dan penasaran akan semua objek wisata yang ada di polewali mandar, dimana objek wisata tersebut kita dapat jumpai di berbagai titik daerah"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_polman" />
+
+    <TextView
+        android:id="@+id/pertanyaan_umum"
+        android:layout_width="376dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:text="Apa yang kamu ketahui tentang polman?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/masukan_saran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_polman" />
+
+    <EditText
+        android:id="@+id/masukan_saran"
+        android:layout_width="299dp"
+        android:layout_height="39dp"
+        android:clickable="false"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="isi di sini"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:title="ketik di sini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pertanyaan_umum" />
+
+    <TextView
+        android:id="@+id/next_wisata"
+        android:layout_width="147dp"
+        android:layout_height="18dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="Lanjut ke daftar wisata"
+        android:textColor="#504C4C"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/lanjut_wisata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/masukan_saran" />
+
+    <Button
+        android:id="@+id/lanjut_wisata"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/arrow_right"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/next_wisata"
+        app:layout_constraintVertical_bias="0.555" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activitys.InfoAplikasi">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarInfoApps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ic_inf_bck_home"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ToolbarInfoApps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/pembuat_aplikasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Pembuat Aplikasi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ToolbarInfoApps"
+        app:layout_constraintStart_toEndOf="@+id/ic_inf_bck_home"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bg_profile"
+        android:layout_width="377dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="80dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ToolbarInfoApps"
+        app:srcCompat="@drawable/bg_avatar" />
+
+    <ImageView
+        android:id="@+id/ft_profile"
+        android:layout_width="244dp"
+        android:layout_height="345dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_profile"
+        app:layout_constraintEnd_toEndOf="@+id/bg_profile"
+        app:layout_constraintStart_toStartOf="@+id/bg_profile"
+        app:layout_constraintTop_toTopOf="@+id/bg_profile"
+        app:srcCompat="@drawable/ft_profile" />
+
+    <TextView
+        android:id="@+id/namaDev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Burhanuddin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_profile" />
+
+    <TextView
+        android:id="@+id/nimDev"
+        android:layout_width="111dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="18 541 0 122"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namaDev" />
+
+    <TextView
+        android:id="@+id/gmailDev"
+        android:layout_width="234dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="dev.burhanuddin@gmail.com"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ico_gamil"
+        app:layout_constraintTop_toBottomOf="@+id/contactDev" />
+
+    <TextView
+        android:id="@+id/alamatDev"
+        android:layout_width="182dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:text="Yogyakarta, Indonesia"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneDev" />
+
+    <TextView
+        android:id="@+id/phoneDev"
+        android:layout_width="138dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:text="0823 4657 5907"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gmailDev" />
+
+    <TextView
+        android:id="@+id/contactDev"
+        android:layout_width="153dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:text="Contact Developer"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nimDev" />
+
+    <ImageView
+        android:id="@+id/ico_gamil"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactDev"
+        app:srcCompat="@drawable/ico_gmail"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/ico_phone"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/phoneDev"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gmailDev"
+        app:srcCompat="@drawable/ico_phone"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/ico_map_pin"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/alamatDev"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneDev"
+        app:srcCompat="@drawable/ico_map_pin"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/Info_appss"
+        android:layout_width="84dp"
+        android:layout_height="18dp"
+        android:gravity="center"
+        android:text="Apps Version"
+        android:textColor="#706767"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/version_apps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/version_apps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Beta V.20.1"
+        android:textColor="#706767"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

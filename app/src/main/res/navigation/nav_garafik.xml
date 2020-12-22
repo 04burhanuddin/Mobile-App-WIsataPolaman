@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_garafik"
+    app:startDestination="@id/home">
+    <activity
+        android:id="@+id/HomeAplikasi"
+        android:name="com.tugastengahsemester.burhanuddin.activitys.Home"
+        android:label="activity_layout"
+        tools:layout="@layout/activity_home" >
+        <action
+            android:id="@+id/action_HomeAplikasi_to_infoAplikasi"
+            app:destination="@id/infoAplikasi" />
+        <action
+            android:id="@+id/action_HomeAplikasi_to_DaftarWisata"
+            app:destination="@id/DaftarWisata" />
+    </activity>
+    <activity
+        android:id="@+id/infoAplikasi"
+        android:name="com.tugastengahsemester.burhanuddin.activitys.InfoAplikasi"
+        android:label="activity_info_aplikasi"
+        tools:layout="@layout/activity_info_aplikasi" >
+        <action
+            android:id="@+id/action_infoAplikasi_to_HomeAplikasi"
+            app:destination="@id/HomeAplikasi" />
+    </activity>
+    <activity
+        android:id="@+id/DaftarWisata"
+        android:name="com.tugastengahsemester.burhanuddin.activitys.DaftarWisata"
+        android:label="DaftarWisata"
+        tools:layout="@layout/activity_daftar_wisata">
+        <action
+            android:id="@+id/action_DaftarWisata_to_detailAlunAlun"
+            app:destination="@id/detailAlunAlun" />
+        <action
+            android:id="@+id/action_DaftarWisata_to_detailPabtaiPalippis"
+            app:destination="@id/detailPabtaiPalippis" />
+        <action
+            android:id="@+id/action_DaftarWisata_to_detailNegeriDiatasAwan"
+            app:destination="@id/detailNegeriDiatasAwan" />
+        <action
+            android:id="@+id/action_DaftarWisata_to_detailPantaiGonda"
+            app:destination="@id/detailPantaiGonda" />
+        <action
+            android:id="@+id/action_DaftarWisata_to_detailPantaiDato"
+            app:destination="@id/detailPantaiDato" />
+        <action
+            android:id="@+id/action_DaftarWisata_to_detailHutanBambu"
+            app:destination="@id/detailHutanBambu" />
+    </activity>
+    <fragment
+        android:id="@+id/detailAlunAlun"
+        android:name="com.tugastengahsemester.burhanuddin.fragments.DetailAlunAlun"
+        android:label="fragment_detail_alun_alun"
+        tools:layout="@layout/detail_alun_alun" >
+        <action
+            android:id="@+id/action_detailAlunAlun_to_DaftarWisata"
+            app:destination="@id/DaftarWisata" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPabtaiPalippis"
+        android:name="com.tugastengahsemester.burhanuddin.fragments.DetailPabtaiPalippis"
+        android:label="DetailPabtaiPalippis"
+        tools:layout="@layout/detail_pabtai_palippis">
+        <action
+            android:id="@+id/action_detailPabtaiPalippis_to_DaftarWisata"
+            app:destination="@id/DaftarWisata" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailNegeriDiatasAwan"
+        android:name="com.tugastengahsemester.burhanuddin.fragments.DetailNegeriDiatasAwan"
+        android:label="fragment_detail_negeri_diatas_awan"
+        tools:layout="@layout/detail_negeri_diatas_awan" >
+        <action
+            android:id="@+id/action_detailNegeriDiatasAwan_to_DaftarWisata"
+            app:destination="@id/DaftarWisata" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPantaiGonda"
+        android:name="com.tugastengahsemester.burhanuddin.fragments.DetailPantaiGonda"
+        android:label="DetailPantaiGonda"
+        tools:layout="@layout/detail_pantai_gonda">
+        <action
+            android:id="@+id/action_detailPantaiGonda_to_DaftarWisata"
+            app:destination="@id/DaftarWisata" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPantaiDato"
+        android:name="com.tugastengahsemester.burhanuddin.fragments.DetailPantaiDato"
+        android:label="fragment_detail_pantai_dato"
+        tools:layout="@layout/detail_pantai_dato" >
+        <action
+            android:id="@+id/action_detailPantaiDato_to_DaftarWisata"
+            app:destination="@id/DaftarWisata" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailHutanBambu"
+        android:name="com.tugastengahsemester.burhanuddin.fragments.DetailHutanBambu"
+        android:label="fragment_detail_hutan_bambu"
+        tools:layout="@layout/detail_hutan_bambu" >
+        <action
+            android:id="@+id/action_detailHutanBambu_to_DaftarWisata"
+            app:destination="@id/DaftarWisata" />
+    </fragment>
+</navigation>
